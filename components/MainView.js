@@ -14,14 +14,23 @@ export default class MainView extends Component<Props> {
 
     return (
       <View style={styles.container}>
-        <TouchableOpacity onPress={() => navigate("Model3D", {name: "bucket", scale: 0.3, zoom: -0.5, rotate: 0})} style={styles.button}>
+        <TouchableOpacity
+          onPress={() => navigate("Model3D", {name: "bucket", scale: 0.3, zoom: -0.5, rotate: 0})}
+          style={styles.button}
+        >
           <Text style={styles.textButton}>Wiadro</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigate("Model3D", {name: "hammer", scale: 0.2, zoom: -1.5, rotate: 90})} style={styles.button}>
+        <TouchableOpacity
+          onPress={() => navigate("Model3D", {name: "hammer", scale: 0.2, zoom: -1.5, rotate: 90})}
+          style={styles.button}
+        >
           <Text style={styles.textButton}>Młot</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigate("Model3D")} style={styles.button}>
-          <Text style={styles.textButton}>Model 3</Text>
+        <TouchableOpacity
+          onPress={() => navigate("Model3D", {name: "sword", scale: 0.3, zoom: -1.5, rotate: 90})}
+          style={styles.button}
+        >
+          <Text style={styles.textButton}>Miecz</Text>
         </TouchableOpacity>
       </View>
     );
